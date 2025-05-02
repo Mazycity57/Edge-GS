@@ -109,7 +109,8 @@ For training a single scene , modify the path and configurations in ```single_tr
 bash ./single_train.sh
 ```
 ---
-##Evaluation
+
+## Evaluation
 Metrics (PSNR, SSIM, LPIPS) are computed automatically post-training.
 
 Manual rendering and metrics calculation:
