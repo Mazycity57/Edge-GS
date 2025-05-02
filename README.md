@@ -22,7 +22,7 @@ Recent advancements in 3D Gaussian-based scene rendering have demonstrated signi
 
 ## Method Overview  
 <p align="center">
-  <img src="media/image2.png" width="80%" alt="Edge-GS Pipeline">
+  <img src="/home/wmy/proj/Edge-GS/assets/fig2.png" width="80%" alt="Edge-GS Pipeline">
 </p>  
 
 **Edge-GS** consists of three modules:  
@@ -33,7 +33,7 @@ Recent advancements in 3D Gaussian-based scene rendering have demonstrated signi
 ---
 
 ## Installation  
-*(To be updated upon code release)*  
+ 
 1. Clone the repository:  
 ```bash
 git clone https://github.com/Mazycity57/Edge-GS.git
@@ -42,6 +42,7 @@ cd Edge-GS
 conda create -n edgegs python=3.10
 conda activate edgegs
 pip install -r requirements.txt
+```
 
 ## Data preparation
 
@@ -82,7 +83,6 @@ The method is evaluated on the following datasets:
 **Download Links**:  
 - The MipNeRF360 scenes are provided by the paper author [here](https://jonbarron.info/mipnerf360/). 
 - The SfM data sets for Tanks&Temples and Deep Blending are hosted by 3D-Gaussian-Splatting [here]
----
 
 ## Training & Evaluation  
 To train MipNeRF360 scenes in parallel, run it:
