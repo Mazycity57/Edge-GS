@@ -22,7 +22,7 @@ Recent advancements in 3D Gaussian-based scene rendering have demonstrated signi
 
 ## Method Overview  
 <p align="center">
-  <img src="/home/wmy/proj/Edge-GS/assets/fig2.png" width="80%" alt="Edge-GS Pipeline">
+  <img src="assets/fig2.png" width="80%" alt="Edge-GS Pipeline">
 </p>  
 
 **Edge-GS** consists of three modules:  
