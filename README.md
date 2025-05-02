@@ -43,7 +43,7 @@ conda create -n edgegs python=3.10
 conda activate edgegs
 pip install -r requirements.txt
 ```
-
+---
 ## Data preparation
 
 First, create a ```data/``` folder inside the project path by 
@@ -73,7 +73,7 @@ data/
 │   │       └──0/
 ...
 ```
-
+---
 ## Datasets  
 The method is evaluated on the following datasets:  
 - **Tanks & Temples**: High-fidelity scans for complex outdoor scenes.  
@@ -83,16 +83,21 @@ The method is evaluated on the following datasets:
 **Download Links**:  
 - The MipNeRF360 scenes are provided by the paper author [here](https://jonbarron.info/mipnerf360/). 
 - The SfM data sets for Tanks&Temples and Deep Blending are hosted by 3D-Gaussian-Splatting [here]
+(https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/datasets/input/tandt_db.zip).
+
+---
 
 ## Training & Evaluation  
 To train MipNeRF360 scenes in parallel, run it:
 ```
 bash ./mip360.sh
 ```
+
 To train Tanks&Temples scenes in parallel, run it:
 ```
 bash ./tnt.sh
 ```
+
 To train Deep Blending scenes in parallel, run it:
 ```
 bash ./db.sh
@@ -103,7 +108,7 @@ For training a single scene , modify the path and configurations in ```single_tr
 ```
 bash ./single_train.sh
 ```
-
+---
 ##Evaluation
 Metrics (PSNR, SSIM, LPIPS) are computed automatically post-training.
 
