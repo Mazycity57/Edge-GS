@@ -15,3 +15,25 @@ diff_rasterization/dist
 tensorboard_3d
 screenshots
 *.so
+
+# 忽略所有点云、权重和临时文件
+*.ply
+*.npz
+*.npy
+*.ckpt
+*.pt
+*.pth
+*.tar
+*.log
+*.zip
+*.png
+*.jpg
+*.jpeg
+
+# 忽略输出文件夹
+output/
+checkpoints/
+weights/
+logs/
+results/
+__pycache__/
