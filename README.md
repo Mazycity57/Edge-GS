@@ -4,15 +4,9 @@ Mengyi Wang<sup>1</sup>, Beiqi Chen<sup>1</sup>, Niansheng Liu<sup>1</sup>, Shut
 <sup>1</sup> The School of Computer Engineering, Jimei University, Xiamen, Fujian, China  
 <sup>2</sup> Chengyi College, Jimei University, Xiamen, Fujian, China  
 
-[[`Project Page`](https://github.com/Mazycity57/Edge-GS)][`Paper (Coming Soon)`]
+[[`Project Page`](https://github.com/Mazycity57/Edge-GS)]
 
----
 
-## News  
-- **[2024.XX.XX]** Initial release of the Edge-GS project. Code and datasets will be publicly available soon.  
-- **[2024.XX.XX]** Paper accepted to **[Conference Name]**.  
-
----
 
 ## Abstract  
 Recent advancements in 3D Gaussian-based scene rendering have demonstrated significant potential for efficient neural scene representation. However, challenges remain in accurately capturing geometric boundaries and fine details. This paper introduces **Edge-GS**, a novel method combining **edge-aware anchor re-growing** and **SAM-guided segmentation loss** to enhance boundary fidelity and texture preservation in complex scenes. Our approach dynamically adjusts Gaussian density in high-gradient regions using image gradients and leverages the Segment Anything Model (SAM) for robust edge alignment. Evaluations on multiple datasets show a **0.23 PSNR improvement** on Tanks&Temples compared to baseline methods, demonstrating superior edge clarity and detail recovery.  
