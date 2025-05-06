@@ -48,7 +48,9 @@ Recent advancements in 3D Gaussian-based scene rendering have shown significant 
 ```bash
 git clone https://github.com/Mazycity57/Edge-GS.git
 cd Edge-GS
-1. Install dependencies
+```
+3. Install dependencies
+```
 conda create -n edgegs python=3.10
 conda activate edgegs
 pip install -r requirements.txt
