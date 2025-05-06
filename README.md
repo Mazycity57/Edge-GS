@@ -32,17 +32,7 @@ Recent advancements in 3D Gaussian-based scene rendering have shown significant 
 ---
 
 ## Installation  
- 
-1. Clone the repository:  
-```bash
-git clone https://github.com/Mazycity57/Edge-GS.git
-cd Edge-GS
-1. Install dependencies
-conda create -n edgegs python=3.10
-conda activate edgegs
-pip install -r requirements.txt
-```
-2. Check the requirements
+1. Check the requirements
 #### Hardware Requirements
 - CUDA-ready GPU with Compute Capability 7.0+
 - 24 GB VRAM (to train to paper evaluation quality)
@@ -52,6 +42,16 @@ pip install -r requirements.txt
 - C++ Compiler for PyTorch extensions
 - CUDA SDK 11 for PyTorch extensions, we use 12.1
 - C++ Compiler and CUDA SDK must be compatible
+2. Clone the repository:  
+```bash
+git clone https://github.com/Mazycity57/Edge-GS.git
+cd Edge-GS
+1. Install dependencies
+conda create -n edgegs python=3.10
+conda activate edgegs
+pip install -r requirements.txt
+```
+
 
 ---
 ## Data preparation
