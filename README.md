@@ -1,4 +1,4 @@
-# Enhancing Boundary Fidelity in 3D Scene Rendering via Edge-Aware Gaussian Splatting
+# Edge-Aware Gaussian Splatting: Enhancing Boundary Fidelity in 3D Scene Rendering
 
 Mengyi Wang<sup>1</sup>, Beiqi Chen<sup>1</sup>, Niansheng Liu<sup>1</sup>, Shuting Chen<sup>2</sup>, Jinhe Su<sup>1*</sup>  
 <sup>1</sup> The School of Computer Engineering, Jimei University, Xiamen, Fujian, China  
