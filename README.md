@@ -27,7 +27,7 @@ Recent advancements in 3D Gaussian-based scene rendering have shown significant 
   <img src="assets/fig2.png" width="80%" alt="Edge-GS Pipeline">
 </p>  
 
-**Edge-GS** consists of three modules:  
+Our method consists of three modules:  
 1. **Neural Gaussian Derivation**: Initializes Gaussians from point clouds.  
 2. **Edge-aware Anchor Re-Growing**: Optimizes anchor distribution using gradient thresholds and adaptive iteration.  
 3. **Edge-Sensitive Segmentation Loss**: Aligns rendered and ground-truth edges via SAM-generated masks.  
