@@ -4,7 +4,7 @@ Mengyi Wang<sup>1</sup>, Beiqi Chen<sup>1</sup>, Niansheng Liu<sup>1</sup>, Shut
 <sup>1</sup> The School of Computer Engineering, Jimei University, Xiamen, Fujian, China  
 <sup>2</sup> Chengyi College, Jimei University, Xiamen, Fujian, China  
 
-[[`Project Page`](https://github.com/Mazycity57/Edge-GS)] | [![Submitted to The Visual Computer](https://img.shields.io/badge/submitted-The%20Visual%20Computer-blue.svg)](https://link.to/your/paper)
+[[`Project Page`](https://github.com/Mazycity57/Edge-GS)] | [Under Review at The Visual Computer]
 
 
 
