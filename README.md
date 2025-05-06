@@ -11,6 +11,7 @@ Mengyi Wang<sup>1</sup>, Beiqi Chen<sup>1</sup>, Niansheng Liu<sup>1</sup>, Shut
 
 
 ## Abstract  
+---
 Recent advancements in 3D Gaussian-based scene rendering have shown significant potential for efficient neural scene representation. However, accurately capturing geometric boundaries and fine details in complex scenes remains challenging. This paper introduces a novel method that addresses these challenges by dynamically increasing neural Gaussian density in high-gradient regions using edge-aware optimization and leveraging the Segment Anything Model (SAM) for accurate object segmentation. Our collaborative optimization strategy significantly enhances boundary clarity and texture fidelity in 3D Gaussian rendering, particularly in complex scenes. Evaluated on multiple datasets, our method demonstrates substantial improvements in rendering quality, achieving a 0.23 improvement in PSNR on the Tanks&Temples dataset compared to the baseline method.
 ---
 
