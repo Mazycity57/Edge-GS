@@ -4,13 +4,12 @@ Mengyi Wang<sup>1</sup>, Beiqi Chen<sup>1</sup>, Niansheng Liu<sup>1</sup>, Shut
 <sup>1</sup> The School of Computer Engineering, Jimei University, Xiamen, Fujian, China  
 <sup>2</sup> Chengyi College, Jimei University, Xiamen, Fujian, China  
 
-[[`Project Page`](https://github.com/Mazycity57/Edge-GS)]
+[[`Project Page`](https://github.com/Mazycity57/Edge-GS)] | [Paper](xxx)
 
 
 
 ## Abstract  
-Recent advancements in 3D Gaussian-based scene rendering have demonstrated significant potential for efficient neural scene representation. However, challenges remain in accurately capturing geometric boundaries and fine details. This paper introduces **Edge-GS**, a novel method combining **edge-aware anchor re-growing** and **SAM-guided segmentation loss** to enhance boundary fidelity and texture preservation in complex scenes. Our approach dynamically adjusts Gaussian density in high-gradient regions using image gradients and leverages the Segment Anything Model (SAM) for robust edge alignment. Evaluations on multiple datasets show a **0.23 PSNR improvement** on Tanks&Temples compared to baseline methods, demonstrating superior edge clarity and detail recovery.  
-
+Recent advancements in 3D Gaussian-based scene rendering have shown significant potential for efficient neural scene representation. However, accurately capturing geometric boundaries and fine details in complex scenes remains challenging. This paper introduces a novel method that addresses these challenges by dynamically increasing neural Gaussian density in high-gradient regions using edge-aware optimization and leveraging the Segment Anything Model (SAM) for accurate object segmentation. Our collaborative optimization strategy significantly enhances boundary clarity and texture fidelity in 3D Gaussian rendering, particularly in complex scenes. Evaluated on multiple datasets, our method demonstrates substantial improvements in rendering quality, achieving a 0.23 improvement in PSNR on the Tanks&Temples dataset compared to the baseline method.
 ---
 
 ## Key Features  
@@ -43,6 +42,17 @@ conda create -n edgegs python=3.10
 conda activate edgegs
 pip install -r requirements.txt
 ```
+2. Check the requirements
+#### Hardware Requirements
+- CUDA-ready GPU with Compute Capability 7.0+
+- 24 GB VRAM (to train to paper evaluation quality)
+
+#### Software Requirements
+- Conda (recommended for easy setup)
+- C++ Compiler for PyTorch extensions
+- CUDA SDK 11 for PyTorch extensions, we use 12.1
+- C++ Compiler and CUDA SDK must be compatible
+
 ---
 ## Data preparation
 
