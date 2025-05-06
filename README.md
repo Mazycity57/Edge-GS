@@ -87,7 +87,7 @@ data/
 ```
 
 
-Download the SAM model at the [ link](https://github.com/facebookresearch/segment-anything) and place the downloaded model file in the folder model/.
+Download the SAM model at the [ link](https://github.com/facebookresearch/segment-anything) and place the downloaded model file in the folder ```model/```.
 
 ---
 ## Datasets  
