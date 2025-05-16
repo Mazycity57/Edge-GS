@@ -122,7 +122,7 @@ def training(dataset, opt, pipe, dataset_name, testing_iterations, saving_iterat
     project_root = os.path.dirname(os.path.abspath(__file__))
 
     # 构建相对于项目目录的模型路径
-    checkpoint_path = os.path.join(project_root, "model", "sam_vit_h_4b8939.pth")  # 假设模型文件名是 sam_vit_h.pth
+    checkpoint_path = os.path.join(project_root, "model", "sam_vit_h_4b8939.pth") 
     
     if not os.path.exists(checkpoint_path):
         raise FileNotFoundError(f"SAM checkpoint not found at {checkpoint_path}")
@@ -434,7 +434,7 @@ def Image_pre_segmentation(scene, min_area, dataset_path):  # 增加 min_area �
     project_root = os.path.dirname(os.path.abspath(__file__))
 
     # 构建相对于项目目录的模型路径
-    checkpoint_path = os.path.join(project_root, "model", "sam_vit_h_4b8939.pth")  # 假设模型文件名是 sam_vit_h.pth
+    checkpoint_path = os.path.join(project_root, "model", "sam_vit_h_4b8939.pth")  
 
     sam = sam_model_registry["vit_h"](checkpoint=checkpoint_path).to("cuda")
     mask_generator = SamAutomaticMaskGenerator(sam)
