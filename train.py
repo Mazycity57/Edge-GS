@@ -430,7 +430,13 @@ def should_compute_seg_loss(iteration, L1_loss, ssim_loss,
             
 def Image_pre_segmentation(scene, min_area, dataset_path):  # 增加 min_area 参数 
     # Initialize SAM model
-    sam = sam_model_registry["vit_h"](checkpoint="/home/wmy/proj/Scaffold-GS-main/model/sam_vit_h_4b8939.pth").to("cuda")
+    # 获取当前脚本所在目录
+    project_root = os.path.dirname(os.path.abspath(__file__))
+
+    # 构建相对于项目目录的模型路径
+    checkpoint_path = os.path.join(project_root, "model", "sam_vit_h_4b8939.pth")  # 假设模型文件名是 sam_vit_h.pth
+
+    sam = sam_model_registry["vit_h"](checkpoint=checkpoint_path).to("cuda")
     mask_generator = SamAutomaticMaskGenerator(sam)
     
     viewpoint_stack = []  # 初始化为空列表
