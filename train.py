@@ -118,8 +118,14 @@ def training(dataset, opt, pipe, dataset_name, testing_iterations, saving_iterat
     iter_start = torch.cuda.Event(enable_timing = True)
     iter_end = torch.cuda.Event(enable_timing = True)
     
-    # Initialize SAM model
-    sam = sam_model_registry["vit_h"](checkpoint="/home/wmy/proj/Scaffold-GS-main/model/sam_vit_h_4b8939.pth").to("cuda")
+    # 获取当前脚本所在目录
+    project_root = os.path.dirname(os.path.abspath(__file__))
+
+    # 构建相对于项目目录的模型路径
+    checkpoint_path = os.path.join(project_root, "model", "sam_vit_h.pth")  # 假设模型文件名是 sam_vit_h.pth
+
+    # 初始化 SAM 模型
+    sam = sam_model_registry["vit_h"](checkpoint=checkpoint_path).to("cuda")
     mask_generator = SamAutomaticMaskGenerator(sam)
     
     #对数据集里面的图片进行预分割处理
