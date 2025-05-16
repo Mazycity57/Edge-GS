@@ -122,7 +122,10 @@ def training(dataset, opt, pipe, dataset_name, testing_iterations, saving_iterat
     project_root = os.path.dirname(os.path.abspath(__file__))
 
     # 构建相对于项目目录的模型路径
-    checkpoint_path = os.path.join(project_root, "model", "sam_vit_h.pth")  # 假设模型文件名是 sam_vit_h.pth
+    checkpoint_path = os.path.join(project_root, "model", "sam_vit_h_4b8939.pth")  # 假设模型文件名是 sam_vit_h.pth
+    
+    if not os.path.exists(checkpoint_path):
+        raise FileNotFoundError(f"SAM checkpoint not found at {checkpoint_path}")
 
     # 初始化 SAM 模型
     sam = sam_model_registry["vit_h"](checkpoint=checkpoint_path).to("cuda")
